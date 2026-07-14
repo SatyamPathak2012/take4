@@ -1,142 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Himalayan Momo House</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
 
-body{
-    background:#f8f4ef;
-}
+        body {
+            background: #f8f4ef;
+        }
 
-.menu{
-    padding:60px 10%;
-}
+        .menu {
+            padding: 60px 10%;
+        }
 
-.menu h1{
-    text-align:center;
-    font-size:42px;
-    color:#8B0000;
-    margin-bottom:40px;
-}
+        .menu h1 {
+            text-align: center;
+            font-size: 42px;
+            color: #8B0000;
+            margin-bottom: 40px;
+        }
 
-.menu-container{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
-}
+        .menu-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
 
-.menu-card{
-    background:white;
-    border-radius:12px;
-    padding:25px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.1);
-    transition:0.3s;
-}
+        .menu-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
 
-.menu-card:hover{
-    transform:translateY(-8px);
-}
+        .menu-card:hover {
+            transform: translateY(-8px);
+        }
 
-.menu-card h2{
-    color:#B22222;
-    margin-bottom:20px;
-    border-bottom:2px solid #e6e6e6;
-    padding-bottom:10px;
-}
+        .menu-card h2 {
+            color: #B22222;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e6e6e6;
+            padding-bottom: 10px;
+        }
 
-.menu-card ul{
-    list-style:none;
-}
+        .menu-card ul {
+            list-style: none;
+        }
 
-.menu-card li{
-    display:flex;
-    justify-content:space-between;
-    padding:10px 0;
-    border-bottom:1px dashed #ccc;
-    color:#444;
-    font-size:17px;
-}
+        .menu-card li {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px dashed #ccc;
+            color: #444;
+            font-size: 17px;
+        }
 
-.menu-card li:last-child{
-    border-bottom:none;
-}
+        .menu-card li:last-child {
+            border-bottom: none;
+        }
 
-.menu-card span{
-    color:#e67e22;
-    font-weight:bold;
-}
+        .menu-card span {
+            color: #e67e22;
+            font-weight: bold;
+        }
+
+        /* From Uiverse.io by felipesntr */
+        .backbtn {
+            border: 2px solid #24b4fb;
+            background-color: #24b4fb;
+            border-radius: 0.9em;
+            cursor: pointer;
+            padding: 0.6em 1.2em 0.6em 1em;
+            transition: all ease-in-out 0.2s;
+            font-size: 20px;
+            position: absolute;
+            top: 2vh;
+            left: 1vw;
+        }
+
+        .backbtn span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-weight: 600;
+            font-size: 20px;
+        }
+
+        .backbtn:hover {
+            background-color: #0071e2;
+        }
+        .btna{
+            color: white;
+            text-decoration: none;
+        }
     </style>
 
 </head>
+
 <body>
+    <button class="backbtn">
+        <a class="btna" href="index.html">
+            <span>
+                ⬅   Back
+            </span>
+        </a>
+    </button>
 
-<section class="menu">
-    <h1>Our Menu</h1>
+    <section class="menu">
+        <h1>Our Menu</h1>
 
-    <div class="menu-container">
+        <div class="menu-container">
 
-        <div class="menu-card">
-            <h2>🥟 Steamed Momos</h2>
-            <ul>
-                <li>Chicken Momo <span>Rs. 180</span></li>
-                <li>Buff Momo <span>Rs. 170</span></li>
-                <li>Veg Momo <span>Rs. 150</span></li>
-                <li>Paneer Momo <span>Rs. 190</span></li>
-            </ul>
+            <div class="menu-card">
+                <h2>🥟 Steamed Momos</h2>
+                <ul>
+                    <li>Chicken Momo <span>Rs. 180</span></li>
+                    <li>Buff Momo <span>Rs. 170</span></li>
+                    <li>Veg Momo <span>Rs. 150</span></li>
+                    <li>Paneer Momo <span>Rs. 190</span></li>
+                </ul>
+            </div>
+
+            <div class="menu-card">
+                <h2>🔥 Fried Momos</h2>
+                <ul>
+                    <li>Fried Chicken Momo <span>Rs. 220</span></li>
+                    <li>Fried Buff Momo <span>Rs. 210</span></li>
+                    <li>Fried Veg Momo <span>Rs. 190</span></li>
+                    <li>Cheese Fried Momo <span>Rs. 250</span></li>
+                </ul>
+            </div>
+
+            <div class="menu-card">
+                <h2>🍜 Jhol Momos</h2>
+                <ul>
+                    <li>Chicken Jhol Momo <span>Rs. 240</span></li>
+                    <li>Buff Jhol Momo <span>Rs. 230</span></li>
+                    <li>Veg Jhol Momo <span>Rs. 210</span></li>
+                    <li>Paneer Jhol Momo <span>Rs. 250</span></li>
+                </ul>
+            </div>
+
+            <div class="menu-card">
+                <h2>⭐ Special Momos</h2>
+                <ul>
+                    <li>C Momo <span>Rs. 260</span></li>
+                    <li>Kothey Momo <span>Rs. 240</span></li>
+                    <li>Tandoori Momo <span>Rs. 290</span></li>
+                    <li>Cheese Chicken Momo <span>Rs. 280</span></li>
+                </ul>
+            </div>
+
+            <div class="menu-card">
+                <h2>🥤 Drinks</h2>
+                <ul>
+                    <li>Lassi <span>Rs. 120</span></li>
+                    <li>Lemon Soda <span>Rs. 90</span></li>
+                    <li>Coke <span>Rs. 70</span></li>
+                    <li>Mineral Water <span>Rs. 40</span></li>
+                </ul>
+            </div>
+
         </div>
+    </section>
+    <!-- From Uiverse.io by felipesntr -->
 
-        <div class="menu-card">
-            <h2>🔥 Fried Momos</h2>
-            <ul>
-                <li>Fried Chicken Momo <span>Rs. 220</span></li>
-                <li>Fried Buff Momo <span>Rs. 210</span></li>
-                <li>Fried Veg Momo <span>Rs. 190</span></li>
-                <li>Cheese Fried Momo <span>Rs. 250</span></li>
-            </ul>
-        </div>
-
-        <div class="menu-card">
-            <h2>🍜 Jhol Momos</h2>
-            <ul>
-                <li>Chicken Jhol Momo <span>Rs. 240</span></li>
-                <li>Buff Jhol Momo <span>Rs. 230</span></li>
-                <li>Veg Jhol Momo <span>Rs. 210</span></li>
-                <li>Paneer Jhol Momo <span>Rs. 250</span></li>
-            </ul>
-        </div>
-
-        <div class="menu-card">
-            <h2>⭐ Special Momos</h2>
-            <ul>
-                <li>C Momo <span>Rs. 260</span></li>
-                <li>Kothey Momo <span>Rs. 240</span></li>
-                <li>Tandoori Momo <span>Rs. 290</span></li>
-                <li>Cheese Chicken Momo <span>Rs. 280</span></li>
-            </ul>
-        </div>
-
-        <div class="menu-card">
-            <h2>🥤 Drinks</h2>
-            <ul>
-                <li>Lassi <span>Rs. 120</span></li>
-                <li>Lemon Soda <span>Rs. 90</span></li>
-                <li>Coke <span>Rs. 70</span></li>
-                <li>Mineral Water <span>Rs. 40</span></li>
-            </ul>
-        </div>
-
-    </div>
-</section>
-<div></div>
 
 </body>
+
 </html>
