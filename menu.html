@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Himalayan Momo House</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
     <style>
         * {
             margin: 0;
@@ -20,6 +22,7 @@
 
         .menu {
             padding: 60px 10%;
+            /* border: 1px solid black; */
         }
 
         .menu h1 {
@@ -27,6 +30,7 @@
             font-size: 42px;
             color: #8B0000;
             margin-bottom: 40px;
+            margin-top: 5vh;
         }
 
         .menu-container {
@@ -102,22 +106,147 @@
         .backbtn:hover {
             background-color: #0071e2;
         }
-        .btna{
+
+        .btna {
             color: white;
             text-decoration: none;
+        }
+
+        .top {
+            display: flex;
+            padding: 1rem;
+            /* border: 1px solid black; */
+            /* background-color: #59cbee; */
+            background-color: rgba(9, 9, 9, 0.951);
+            align-items: center;
+            box-shadow: rgba(0, 0, 0, 0.286) 0px 3px 8px;
+            height: 5rem;
+            position: fixed;
+            width: 100%;
+            z-index: 5;
+            /* margin-top: 6.5rem; */
+        }
+
+        .name {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 23px;
+            font-weight: bolder;
+            color: white;
+            margin-left: 3rem;
+        }
+
+        .logo {
+            padding: 0.6rem;
+            /* border: 1px solid black; */
+            border-radius: 50%;
+            color: white;
+            /* background-color: rgb(245, 199, 84); */
+            background-color: #e53740;
+            font-size: larger;
+            margin-left: 1rem
+        }
+
+        .menuicon {
+            font-size: large;
+            color: white;
+            padding: 0.75rem;
+            border-radius: 50%;
+            cursor: pointer;
+            display: none;
+        }
+
+        .menuicon:hover {
+            background-color: #59b2ee;
+        }
+
+        .aboutpage, .menupage {
+            color: white;
+            text-decoration: none;
+            font-size: larger;
+            margin-left: 5rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            transform: translateX(0);
+            transition: all 0.3s ease-in-out;
+            /* border-radius: 10px; */
+            /* border: 2px solid #59cbee; */
+            /* border: 1px solid rgba(26,26,26,0.95); */
+        }
+
+        .homepage {
+            color: white;
+            text-decoration: none;
+            font-size: larger;
+            margin-left: 10rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            transform: translateX(0);
+            transition: all 0.3s ease-in-out;
+            /* border-radius: 10px; */
+            /* border: 2px solid #59cbee; */
+            /* border: 2px solid rgba(26,26,26,0.95); */
+        }
+
+        .homepage:hover {
+            /* text-decoration: underline; */
+            font-size: 25px;
+            transform: translateX(5px);
+            border-top: 2px solid white;
+            border-bottom: 2px solid white;
+            padding: 0.5vw;
+        }
+
+        .aboutpage:hover {
+            /* text-decoration: underline; */
+            font-size: 25px;
+            transform: translateX(5px);
+            border-top: 2px solid white;
+            border-bottom: 2px solid white;
+            padding: 0.5vw;
+        }
+
+        .menupage{
+            border-bottom: 2px solid #a31e25;
+            padding-bottom: 1vh;
+        }
+
+
+        .reservebtn {
+            display: inline-block;
+            padding: 14px 40px;
+            background-color: #e53740;
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            font-size: 19px;
+            /* margin-right: 4vw; */
+            right: 4vw;
+            position: absolute;
+        }
+
+        .reservebtn:hover {
+            background-color: #a31e25;
+            transform: translateY(-3px);
         }
     </style>
 
 </head>
 
 <body>
-    <button class="backbtn">
-        <a class="btna" href="index.html">
-            <span>
-                ⬅   Back
-            </span>
-        </a>
-    </button>
+    <div class="top">
+        <i class="ri-menu-line menuicon"></i>
+        <p class="name">The Momo House</p>
+        <i class="ri-restaurant-line logo"></i>
+
+        <a href="index.html" class="homepage">Home</a>
+        <a href="" class="aboutpage">About us</a>
+        <a href="menu.html" class="menupage">Our menu</a>
+        <a href="" class="aboutpage">Gallery</a>
+
+        <button class="reservebtn">Book Table</button>
+    </div>
 
     <section class="menu">
         <h1>Our Menu</h1>
