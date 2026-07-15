@@ -67,7 +67,7 @@
     color: white;
     text-decoration: none;
     font-size: larger;
-    margin-left: 10rem;
+    margin-left: 6rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     transform: translateX(0);
     transition: all 0.3s ease-in-out;
@@ -165,7 +165,7 @@
 .description{
     text-align: center;
     /* margin-top: 2vh; */
-    color: #D4AF37;
+    color: #e53740;
     font-size: 20px;
     font-weight: bolder;
     font-style: italic;
@@ -210,7 +210,7 @@
     color: #D4AF37;
     margin-top: 4rem;
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bolder;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
@@ -221,7 +221,7 @@
     font-size: 20px;
     font-weight: bolder;
     margin-top: 3vh;
-    color: #D4AF37;
+    color: #e53740;
     font-style: italic;
 }
 .menulink{
@@ -319,4 +319,59 @@
 .freshingredients-name{
     font-size: 18px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.feedback-description{
+    text-align: center;
+    font-size: larger;
+    color: #e53740;
+    font-style: italic;
+    font-weight: bolder;
+    margin-top: 2vh;
+}
+.card1{
+    border: 2px solid #D4AF37;
+    padding: 1.5rem;
+    border-radius: 5px;
+    width: 26vw;
+}
+.person-name{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #e53740;
+}
+.feedbacks{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-top: 2rem;
+    border: 3px solid rgb(190, 181, 181);
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.person-stars{
+    display: flex;
+    justify-content: space-between;
+}
+.person-description{
+    margin-top: 2vh;
+    color: #3d3b3b;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* border: 1px solid black; */
+}
+.footer{
+    background-color: #1b1a1a;
+    margin-top: 5rem;
+    color: #D4AF37;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 1.5rem;
+}
+.footer-name{
+    font-size: 30px;
+    font-weight: bolder;
+}
+.footer-address{
+    border: 1px solid white;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 30vw;
 }
