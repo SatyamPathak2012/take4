@@ -14,6 +14,12 @@
         padding: 0;
     }
 
+    body {
+        overflow: hidden;
+        background-color: #111;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
     .top {
         display: flex;
         padding: 1rem;
@@ -25,15 +31,15 @@
         height: 3rem;
         position: fixed;
         width: 100%;
+        /* margin-top: -6.5rem; */
         z-index: 5;
-        margin-top: -10rem;
     }
 
     .name {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 23px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        font-size: 29px;
         font-weight: bolder;
-        color: white;
+        color: #ff9933;
         margin-left: 3rem;
     }
 
@@ -43,9 +49,9 @@
         border-radius: 50%;
         color: white;
         /* background-color: rgb(245, 199, 84); */
-        background-color: #e53740;
+        background-color: #ff9933;
         font-size: larger;
-        margin-left: 1rem
+        margin-left: 1rem;
     }
 
     .menuicon {
@@ -61,15 +67,16 @@
         background-color: #59b2ee;
     }
 
-    .aboutpage,
-    .menupage {
+    .aboutpage {
         color: white;
         text-decoration: none;
         font-size: larger;
-        margin-left: 5rem;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-left: 3.5rem;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
         transform: translateX(0);
         transition: all 0.3s ease-in-out;
+        border-top: 2px solid rgba(9, 9, 9, 0.951);
+        border-bottom: 2px solid rgba(9, 9, 9, 0.951);
         /* border-radius: 10px; */
         /* border: 2px solid #59cbee; */
         /* border: 1px solid rgba(26,26,26,0.95); */
@@ -79,59 +86,30 @@
         color: white;
         text-decoration: none;
         font-size: larger;
-        margin-left: 6rem;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-left: 5rem;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
         transform: translateX(0);
         transition: all 0.3s ease-in-out;
+        padding-bottom: 1vh;
+        border-bottom: 2px solid #ff9933;
         /* border-radius: 10px; */
         /* border: 2px solid #59cbee; */
         /* border: 2px solid rgba(26,26,26,0.95); */
     }
 
-    .menupage:hover {
-        font-size: 25px;
-        transform: translateX(5px);
-        border-top: 2px solid white;
-        border-bottom: 2px solid white;
-        padding: 0.5vw;
-    }
-
-
-    .homepage:hover {
-        /* text-decoration: underline; */
-        font-size: 25px;
-        transform: translateX(5px);
-        border-top: 2px solid white;
-        border-bottom: 2px solid white;
-        padding: 0.5vw;
-    }
-
     .aboutpage:hover {
         /* text-decoration: underline; */
-        font-size: 25px;
+        font-size: 22px;
         transform: translateX(5px);
-        border-top: 2px solid white;
-        border-bottom: 2px solid white;
+        border-top: 2px solid #ff9933;
+        border-bottom: 2px solid #ff9933;
         padding: 0.5vw;
     }
-
-    .aboutpage1 {
-        border-bottom: 2px solid #a31e25;
-        padding-bottom: 1vh;
-        color: white;
-        text-decoration: none;
-        font-size: larger;
-        margin-left: 5rem;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        transform: translateX(0);
-        transition: all 0.3s ease-in-out;
-    }
-
 
     .reservebtn {
         display: inline-block;
         padding: 14px 40px;
-        background-color: #e53740;
+        background: linear-gradient(45deg, #ff6b00, #ffb347);
         color: white;
         text-decoration: none;
         border-radius: 20px;
@@ -141,84 +119,60 @@
         cursor: pointer;
         font-size: 19px;
         /* margin-right: 4vw; */
-        right: 3vw;
+        right: 4vw;
+        bottom: 2vh;
         position: absolute;
     }
 
     .reservebtn:hover {
-        background-color: #a31e25;
+        /* background-color: #a31e25; */
         transform: translateY(-3px);
     }
 
-    .story {
-        padding: 1rem;
-        padding-top: 2.5rem;
-        border-radius: 10px;
-        border: 3px solid white;
-        width: 35vw;
-        margin-left: 3vw;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        transition: all ease 0.7s;
-        cursor: pointer;
-        /* margin: ; */
-    }
-
-    .story:hover {
-        transform: translateY(-5px);
-        border-bottom: 3px solid #e53740;
-        border-left: 3px solid #e53740;
-    }
-
-    .mission:hover {
-        transform: translateY(-5px);
-        border-bottom: 3px solid #e53740;
-        border-left: 3px solid #e53740;
-    }
-
-    .mission {
-        width: 35vw;
-        padding: 1rem;
-        border-radius: 10px;
-        padding-top: 2.5rem;
-        border: 3px solid white;
-        margin-right: 3vw;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        transition: all ease 0.7s;
-        cursor: pointer;
-    }
-
-    .mainbody {
-        margin-left: 1.5rem;
-        margin-right: 1.5rem;
-        margin-top: 10rem;
-        /* border: 1px solid black; */
-        padding: 1.5rem;
+ .mainbody {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 70px;
+        padding: 110px 8% 80px;
+        flex-wrap: wrap;
+    }
+
+    .story,
+    .mission {
+        width: 420px;
+        padding: 45px;
+        border-radius: 25px;
+        background: rgba(255, 255, 255, .06);
+        backdrop-filter: blur(18px);
+        border: 1px solid rgba(255, 255, 255, .08);
+        transition: .45s;
+        box-shadow:0 25px 45px rgba(0, 0, 0, .45);
+        transform-style: preserve-3d;
+    }
+
+    .story:hover,
+    .mission:hover {
+        transform:translateY(-15px) rotateX(7deg) rotateY(-4deg);
+        box-shadow:0 35px 60px rgba(0, 0, 0, .6);
     }
 
     .story-title {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 25px;
+        font-size: 34px;
         text-align: center;
-        margin-bottom: 2rem;
-        font-weight: bolder;
+        font-weight: 700;
+        margin-bottom: 30px;
         color: #D4AF37;
         padding-bottom: 2vh;
+        position: relative;
         background: linear-gradient(#e53740, #e53740) bottom center / 15% 2px no-repeat;
 
     }
 
     .story-main {
-        font-size: larger;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 19px;
+        line-height: 2;
+        color: #d8d8d8;
         text-align: center;
-        color: rgb(85, 84, 84);
-    }
-    .a{
-        color: white;
-        text-decoration: none;
-        margin-bottom: 6.5vh;
     }
 </style>
 
@@ -228,9 +182,9 @@
         <p class="name">The Momo House</p>
         <i class="ri-restaurant-line logo"></i>
 
-        <a href="index.html" class="homepage">Home</a>
-        <a href="aboutus.html" class="aboutpage1">About us</a>
-        <a href="menu.html" class="menupage">Our menu</a>
+        <a href="index.html" class="aboutpage">Home</a>
+        <a href="aboutus.html" class="homepage">About us</a>
+        <a href="menu.html" class="aboutpage">Our menu</a>
         <a href="gallery.html" class="aboutpage">Gallery</a>
         <a href="mybookings.html" class="aboutpage">My Bookings</a>
 
