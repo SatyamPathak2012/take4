@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+        integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
+
+    .a {
+        color: black;
+        font-size: xx-large;
+        text-decoration: none;
+    }
+
+    .backbtn {
+        padding: 0.7rem;
+        background-color: white;
+        border: 1px solid white;
+        cursor: pointer;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        border-bottom-right-radius: 25px;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', Arial, sans-serif;
+    }
+
+    body {
+        background: #f7f3ee;
+        color: #333;
+    }
+
+
+    .hero {
+        height: 45vh;
+        background:
+            linear-gradient(rgba(0, 0, 0, 0.55),
+                rgba(0, 0, 0, 0.55)),
+            url("restaurant.jpg");
+
+        background-size: cover;
+        background-position: center;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+    }
+
+
+    .hero-content h1 {
+        font-size: 52px;
+        margin-bottom: 10px;
+    }
+
+    .hero-content p {
+        font-size: 20px;
+    }
+
+
+    .booking-container {
+
+        width: 90%;
+        max-width: 900px;
+
+        background: white;
+
+        margin: -70px auto 50px;
+
+        padding: 40px;
+
+        border-radius: 15px;
+
+        box-shadow:
+            0 10px 30px rgba(0, 0, 0, 0.15);
+    }
+
+
+    .booking-container h2 {
+
+        text-align: center;
+
+        color: #9b4d16;
+
+        margin-bottom: 30px;
+
+        font-size: 32px;
+    }
+
+
+    .form-grid {
+
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 20px;
+    }
+
+
+    .form-group label {
+
+        display: block;
+
+        font-weight: 600;
+
+        margin-bottom: 8px;
+    }
+
+
+    input,
+    select,
+    textarea {
+
+        width: 100%;
+
+        padding: 13px;
+
+        border: 1px solid #ccc;
+
+        border-radius: 8px;
+
+        font-size: 16px;
+
+        outline: none;
+    }
+
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+
+        border-color: #9b4d16;
+    }
+
+
+    textarea {
+
+        height: 120px;
+
+        resize: none;
+    }
+
+
+    .full {
+
+        grid-column: span 2;
+    }
+
+
+    .submitbtn {
+
+        width: 100%;
+
+        padding: 15px;
+
+        background: #9b4d16;
+
+        border: none;
+
+        color: white;
+
+        font-size: 18px;
+
+        font-weight: bold;
+
+        border-radius: 8px;
+
+        cursor: pointer;
+
+        transition: 0.3s;
+    }
+
+
+    .submitbtn:hover {
+
+        background: #6e330c;
+
+    }
+
+    .backbutton{
+        position: absolute;
+    }
+
+
+    /* Responsive */
+
+    @media(max-width:700px) {
+
+        .hero-content h1 {
+            font-size: 36px;
+        }
+
+
+        .form-grid {
+
+            grid-template-columns: 1fr;
+
+        }
+
+
+        .full {
+
+            grid-column: span 1;
+
+        }
+
+
+        .booking-container {
+
+            padding: 25px;
+
+        }
+
+    }
+</style>
+
+<body>
+    <div class="backbutton">
+        <button class="backbtn"><a class="a" href="index.html"><i
+                    class="ri-arrow-left-line backicon"></i>Back</a></button>
+
+    </div>
+    <div class="hero">
+        <div>
+            <h1>Book a Table</h1>
+            <p>Reserve your dining experience with us</p>
+        </div>
+    </div>
+
+    <div class="booking-container">
+
+        <h2>Make a Reservation</h2>
+
+        <form>
+            <div class="form-grid">
+
+                <div>
+                    <label>Name</label>
+                    <input type="text" placeholder="Your name" required>
+                </div>
+
+                <div>
+                    <label>Phone</label>
+                    <input type="tel" placeholder="Phone number" required>
+                </div>
+
+                <div>
+                    <label>Email</label>
+                    <input type="email" placeholder="Email address">
+                </div>
+
+                <div>
+                    <label>Number of Guests</label>
+                    <select>
+                        <option>1 Person</option>
+                        <option>2 People</option>
+                        <option>3-4 People</option>
+                        <option>5+ People</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label>Date</label>
+                    <input type="date" required>
+                </div>
+
+                <div>
+                    <label>Time</label>
+                    <input type="time" required>
+                </div>
+
+                <div class="full-width">
+                    <label>Special Requests</label>
+                    <textarea placeholder="Birthday, allergies, seating preference..."></textarea>
+                </div>
+
+                <div class="full-width">
+                    <button class="submitbtn" type="submit">Reserve Table</button>
+                </div>
+
+            </div>
+        </form>
+
+
+</body>
+
+</html>

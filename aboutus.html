@@ -1,152 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-        <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
 
 </head>
 <style>
-    *{
+    * {
         margin: 0;
         padding: 0;
     }
-          .top {
-            display: flex;
-            padding: 1rem;
-            /* border: 1px solid black; */
-            /* background-color: #59cbee; */
-            background-color: rgba(9, 9, 9, 0.951);
-            align-items: center;
-            box-shadow: rgba(0, 0, 0, 0.286) 0px 3px 8px;
-            height: 3rem;
-            position: fixed;
-            width: 100%;
-            z-index: 5;
-            /* margin-top: 6.5rem; */
-        }
 
-        .name {
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: 23px;
-            font-weight: bolder;
-            color: white;
-            margin-left: 3rem;
-        }
+    .top {
+        display: flex;
+        padding: 1rem;
+        /* border: 1px solid black; */
+        /* background-color: #59cbee; */
+        background-color: rgba(9, 9, 9, 0.951);
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.286) 0px 3px 8px;
+        height: 3rem;
+        position: fixed;
+        width: 100%;
+        z-index: 5;
+        margin-top: -10rem;
+    }
 
-        .logo {
-            padding: 0.6rem;
-            /* border: 1px solid black; */
-            border-radius: 50%;
-            color: white;
-            /* background-color: rgb(245, 199, 84); */
-            background-color: #e53740;
-            font-size: larger;
-            margin-left: 1rem
-        }
+    .name {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 23px;
+        font-weight: bolder;
+        color: white;
+        margin-left: 3rem;
+    }
 
-        .menuicon {
-            font-size: large;
-            color: white;
-            padding: 0.75rem;
-            border-radius: 50%;
-            cursor: pointer;
-            display: none;
-        }
+    .logo {
+        padding: 0.6rem;
+        /* border: 1px solid black; */
+        border-radius: 50%;
+        color: white;
+        /* background-color: rgb(245, 199, 84); */
+        background-color: #e53740;
+        font-size: larger;
+        margin-left: 1rem
+    }
 
-        .menuicon:hover {
-            background-color: #59b2ee;
-        }
+    .menuicon {
+        font-size: large;
+        color: white;
+        padding: 0.75rem;
+        border-radius: 50%;
+        cursor: pointer;
+        display: none;
+    }
 
-        .aboutpage, .menupage {
-            color: white;
-            text-decoration: none;
-            font-size: larger;
-            margin-left: 5rem;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            transform: translateX(0);
-            transition: all 0.3s ease-in-out;
-            /* border-radius: 10px; */
-            /* border: 2px solid #59cbee; */
-            /* border: 1px solid rgba(26,26,26,0.95); */
-        }
+    .menuicon:hover {
+        background-color: #59b2ee;
+    }
 
-        .homepage {
-            color: white;
-            text-decoration: none;
-            font-size: larger;
-            margin-left: 6rem;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            transform: translateX(0);
-            transition: all 0.3s ease-in-out;
-            /* border-radius: 10px; */
-            /* border: 2px solid #59cbee; */
-            /* border: 2px solid rgba(26,26,26,0.95); */
-        }
+    .aboutpage,
+    .menupage {
+        color: white;
+        text-decoration: none;
+        font-size: larger;
+        margin-left: 5rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        transform: translateX(0);
+        transition: all 0.3s ease-in-out;
+        /* border-radius: 10px; */
+        /* border: 2px solid #59cbee; */
+        /* border: 1px solid rgba(26,26,26,0.95); */
+    }
 
-        .menupage:hover{
-            font-size: 25px;
-            transform: translateX(5px);
-            border-top: 2px solid white;
-            border-bottom: 2px solid white;
-            padding: 0.5vw;
-        }
+    .homepage {
+        color: white;
+        text-decoration: none;
+        font-size: larger;
+        margin-left: 6rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        transform: translateX(0);
+        transition: all 0.3s ease-in-out;
+        /* border-radius: 10px; */
+        /* border: 2px solid #59cbee; */
+        /* border: 2px solid rgba(26,26,26,0.95); */
+    }
 
-
-        .homepage:hover {
-            /* text-decoration: underline; */
-            font-size: 25px;
-            transform: translateX(5px);
-            border-top: 2px solid white;
-            border-bottom: 2px solid white;
-            padding: 0.5vw;
-        }
-
-        .aboutpage:hover {
-            /* text-decoration: underline; */
-            font-size: 25px;
-            transform: translateX(5px);
-            border-top: 2px solid white;
-            border-bottom: 2px solid white;
-            padding: 0.5vw;
-        }
-
-        .aboutpage1{
-            border-bottom: 2px solid #a31e25;
-            padding-bottom: 1vh;
-            color: white;
-            text-decoration: none;
-            font-size: larger;
-            margin-left: 5rem;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            transform: translateX(0);
-            transition: all 0.3s ease-in-out;
-        }
+    .menupage:hover {
+        font-size: 25px;
+        transform: translateX(5px);
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+        padding: 0.5vw;
+    }
 
 
-        .reservebtn {
-            display: inline-block;
-            padding: 14px 40px;
-            background-color: #e53740;
-            color: white;
-            text-decoration: none;
-            border-radius: 20px;
-            font-weight: 600;
-            transition: all 0.3s;
-            border: none;
-            cursor: pointer;
-            font-size: 19px;
-            /* margin-right: 4vw; */
-            right: 3vw;
-            position: absolute;
-        }
+    .homepage:hover {
+        /* text-decoration: underline; */
+        font-size: 25px;
+        transform: translateX(5px);
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+        padding: 0.5vw;
+    }
 
-        .reservebtn:hover {
-            background-color: #a31e25;
-            transform: translateY(-3px);
-        }
+    .aboutpage:hover {
+        /* text-decoration: underline; */
+        font-size: 25px;
+        transform: translateX(5px);
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+        padding: 0.5vw;
+    }
+
+    .aboutpage1 {
+        border-bottom: 2px solid #a31e25;
+        padding-bottom: 1vh;
+        color: white;
+        text-decoration: none;
+        font-size: larger;
+        margin-left: 5rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        transform: translateX(0);
+        transition: all 0.3s ease-in-out;
+    }
+
+
+    .reservebtn {
+        display: inline-block;
+        padding: 14px 40px;
+        background-color: #e53740;
+        color: white;
+        text-decoration: none;
+        border-radius: 20px;
+        font-weight: 600;
+        transition: all 0.3s;
+        border: none;
+        cursor: pointer;
+        font-size: 19px;
+        /* margin-right: 4vw; */
+        right: 3vw;
+        position: absolute;
+    }
+
+    .reservebtn:hover {
+        background-color: #a31e25;
+        transform: translateY(-3px);
+    }
+
+    .story {
+        padding: 1rem;
+        padding-top: 2.5rem;
+        border-radius: 10px;
+        border: 3px solid white;
+        width: 35vw;
+        margin-left: 3vw;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        transition: all ease 0.7s;
+        cursor: pointer;
+        /* margin: ; */
+    }
+
+    .story:hover {
+        transform: translateY(-5px);
+        border-bottom: 3px solid #e53740;
+        border-left: 3px solid #e53740;
+    }
+
+    .mission:hover {
+        transform: translateY(-5px);
+        border-bottom: 3px solid #e53740;
+        border-left: 3px solid #e53740;
+    }
+
+    .mission {
+        width: 35vw;
+        padding: 1rem;
+        border-radius: 10px;
+        padding-top: 2.5rem;
+        border: 3px solid white;
+        margin-right: 3vw;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        transition: all ease 0.7s;
+        cursor: pointer;
+    }
+
+    .mainbody {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        margin-top: 10rem;
+        /* border: 1px solid black; */
+        padding: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .story-title {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 2rem;
+        font-weight: bolder;
+        color: #D4AF37;
+        padding-bottom: 2vh;
+        background: linear-gradient(#e53740, #e53740) bottom center / 15% 2px no-repeat;
+
+    }
+
+    .story-main {
+        font-size: larger;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+        color: rgb(85, 84, 84);
+    }
+    .a{
+        color: white;
+        text-decoration: none;
+        margin-bottom: 6.5vh;
+    }
 </style>
+
 <body>
     <div class="top">
         <i class="ri-menu-line menuicon"></i>
@@ -159,7 +234,26 @@
         <a href="gallery.html" class="aboutpage">Gallery</a>
         <a href="mybookings.html" class="aboutpage">My Bookings</a>
 
-        <button class="reservebtn">Book Table</button>
+        <a class="a" href="booking.html"><button class="reservebtn">Book a Table</button></a>
+    </div>
+    <div class="mainbody">
+        <div class="story">
+            <p class="story-title">The Story Behind The Momo House</p>
+            <p class="story-main">What began as a small kitchen filled with passion and a love for authentic flavors
+                slowly grew into The Momo House — a place where food, tradition, and togetherness come alive. Inspired
+                by the joy of sharing delicious meals with family and friends, we bring the timeless taste of momos to
+                every table. With every bite, we hope to create not just great food, but memorable moments that bring
+                people closer.</p>
+        </div>
+        <div class="mission">
+            <p class="story-title">Our Mission</p>
+            <p class="story-main">At The Momo House, our mission is to bring people together through the authentic taste
+                of momos and the warmth of great hospitality. We are dedicated to preparing fresh, flavorful dishes
+                using quality ingredients while preserving the tradition and love behind every recipe. Our goal is to
+                create a welcoming place where every guest can enjoy delicious food, share meaningful moments, and feel
+                a little closer to home with every visit.</p>
+        </div>
     </div>
 </body>
+
 </html>

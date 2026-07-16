@@ -496,6 +496,12 @@ body{
     cursor: pointer;
     transition: all ease 0.7s;
 }
+.a{
+    text-decoration: none;
+    color: white;
+    /* border: 1px solid black; */
+    margin-bottom: 6.5vh;
+}
 .faq-main1:hover{
     transform: translateY(-5px);
     border-bottom: 3px solid #e53740;
