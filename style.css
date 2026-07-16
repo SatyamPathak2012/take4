@@ -212,6 +212,8 @@ body{
 }
 .dishespage{
     color: #D4AF37;
+    padding-bottom: 0.75rem;
+     background: linear-gradient(#e53740, #e53740) bottom center / 5% 2px no-repeat;
     margin-top: 4rem;
     text-align: center;
     font-size: 30px;
@@ -448,4 +450,65 @@ body{
     color: white;
     font-size: medium;
     margin-left: 2vw;
+}
+.faqpage{
+    padding: 1.5rem;
+    /* padding-top: 2rem; */
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    /* margin: 2rem; */
+    margin-left: 25vw;
+    margin-right: 25vw;
+    /* justify-content: center; */
+}
+.faqpage-description{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin-left: 1vw;
+}
+.faq-box{
+    padding: 1vh 2vw;
+    border-radius: 5px;
+    border: 2px solid rgb(3, 202, 3);
+    background-color: rgb(6, 255, 6);
+    color: white;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.faq-title{
+    display: flex;
+    align-items: center;
+    margin-left: 5vw;
+}
+.faq-main1{
+    /* border: 1px solid black; */
+    margin-left: 2vw;
+    margin-top: 4vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 1rem;
+    border-bottom: 3px solid white;
+    border-left: 3px solid white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* border-left: 4vw; */
+    padding-left: 1.7rem;
+    border-radius: 10px;
+    width: 40vw;
+    cursor: pointer;
+    transition: all ease 0.7s;
+}
+.faq-main1:hover{
+    transform: translateY(-5px);
+    border-bottom: 3px solid #e53740;
+    border-left: 3px solid #e53740;
+}
+
+.faq-que{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #e53740;
+}
+.faq-ans{
+    color: grey;
+    font-size: medium;
 }
