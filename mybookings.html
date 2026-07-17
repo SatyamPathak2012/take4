@@ -162,15 +162,23 @@
     }
 
     .item {
-        color: #ff9933;
         font-size: 25px;
+        display: flex;
+        /* justify-content: space-between; */
         /* text-decoration: underline; */
     }
-
-    span {
-        color: white;
-        /* text-decoration: none; */
+    
+    .item .booking-field {
+        color: #ff9933;
+        justify-content: left;
     }
+
+    .item .booking-value {
+        color: white;
+        justify-content: right;
+    }
+
+    
     .script-p{
         text-align: center;
         color: lightgrey;
@@ -213,13 +221,13 @@
         <h1>Your Booking</h1>
 
         <div class="main-items">
-            <p class="item">Name : <span id="name"></span></p>
-            <p class="item">Phone : <span id="phone"></span></p>
-            <p class="item">Email : <span id="email"></span></p>
-            <p class="item">Guests : <span id="guests"></span></p>
-            <p class="item">Date : <span id="date"></span></p>
-            <p class="item">Time : <span id="time"></span></p>
-            <p class="item">Special Request : <span id="request"></span></p>
+            <p class="item"><span class="booking-field">Name : </span><span class="booking-value" id="name"></span></p>
+            <p class="item"><span class="booking-field">Phone : </span><span class="booking-value" id="phone"></span></p>
+            <p class="item"><span class="booking-field">Email : </span><span class="booking-value" id="email"></span></p>
+            <p class="item"><span class="booking-field">Guests : </span><span class="booking-value" id="guests"></span></p>
+            <p class="item"><span class="booking-field">Date : </span><span class="booking-value" id="date"></span></p>
+            <p class="item"><span class="booking-field">Time : </span><span class="booking-value" id="time"></span></p>
+            <p class="item"><span class="booking-field">Special Request : </span><span class="booking-value" id="request"></span></p>
         </div>
 
     </div>
