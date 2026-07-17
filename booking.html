@@ -26,7 +26,7 @@
 
     .backbtn {
         padding: 0.7rem;
-        background:  linear-gradient(45deg, #ff6b00, #ffb347);
+        background: linear-gradient(45deg, #ff6b00, #ffb347);
         /* border: 1px solid white; */
         cursor: pointer;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
@@ -37,21 +37,16 @@
     }
 
     body {
-        background: #f7f3ee;
+        background: #111111;
         color: #333;
     }
 
 
     .hero {
         height: 35vh;
-        background:
-            linear-gradient(rgba(0, 0, 0, 0.55),
-                rgba(0, 0, 0, 0.55)),
-            url("restaurant.jpg");
-
-        background-size: cover;
-        background-position: center;
-
+        background-color: rgba(9, 9, 9, 0.951);
+        /* background-size: cover; */
+        /* background-position: center; */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -65,6 +60,7 @@
     .hero-content h1 {
         font-size: 52px;
         margin-bottom: 10px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 
     .hero-content p {
@@ -73,69 +69,56 @@
 
 
     .booking-container {
-
         width: 90%;
         max-width: 900px;
-
-        background: white;
-
+        background: #1d1d1d;
         margin: -70px auto 50px;
-
         padding: 40px;
-
         border-radius: 15px;
-
-        box-shadow:
-            0 10px 30px rgba(0, 0, 0, 0.15);
+        box-shadow:0 10px 30px rgba(0, 0, 0, 0.15);
     }
 
 
     .booking-container h2 {
-
         text-align: center;
-
-        color: #9b4d16;
-
+        color: #ff9933;
         margin-bottom: 30px;
-
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 32px;
     }
 
 
     .form-grid {
-
         display: grid;
-
         grid-template-columns: repeat(2, 1fr);
-
         gap: 20px;
     }
 
 
     .form-group label {
-
+        /* color: white; */
         display: block;
-
         font-weight: 600;
-
         margin-bottom: 8px;
+    }
+
+    label {
+        color: white;
+        font-size: larger;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-bottom: 1vh;
     }
 
 
     input,
     select,
     textarea {
-
         width: 100%;
-
         padding: 13px;
-
-        border: 1px solid #ccc;
-
+        /* border: 1px solid #ccc; */
+        border: 3px solid #fc9e41;
         border-radius: 8px;
-
         font-size: 16px;
-
         outline: none;
     }
 
@@ -143,59 +126,64 @@
     input:focus,
     select:focus,
     textarea:focus {
-
-        border-color: #9b4d16;
+        border: 3px solid;
+        border-color: #ff6b00;
     }
 
 
     textarea {
-
         height: 120px;
-
         resize: none;
     }
 
 
     .full {
-
         grid-column: span 2;
     }
 
-
     .submitbtn {
-
         width: 100%;
-
         padding: 15px;
-
-        background: #9b4d16;
-
+        /* background: #9b4d16; */
+        background: linear-gradient(45deg, #ff6b00, #ffb347);
         border: none;
-
         color: white;
-
-        font-size: 18px;
-
+        font-size: 22px;
         font-weight: bold;
-
         border-radius: 8px;
-
         cursor: pointer;
-
         transition: 0.3s;
+        margin-top: 1em;
     }
 
 
     .submitbtn:hover {
-
-        background: #6e330c;
+        transform: translateY(-3px);
+        /* background: #6e330c; */
 
     }
 
-    .backbutton{
+    .backbutton {
         position: absolute;
     }
 
+    .hero-div {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 27px;
+        color: #ff9933;
+    }
+
+    .hero-div h1 {
+        background: linear-gradient(#e53740, #e53740) bottom center / 25% 2px no-repeat;
+        padding-bottom: 1.5vh;
+        margin-bottom: 2vh;
+    }
+
+    .booking-text {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #ff9933;
+        font-size: 20px;
+    }
 </style>
 
 <body>
@@ -205,7 +193,7 @@
 
     </div>
     <div class="hero">
-        <div>
+        <div class="hero-div">
             <h1>Book a Table</h1>
             <p>Reserve your dining experience with us</p>
         </div>
@@ -213,29 +201,29 @@
 
     <div class="booking-container">
 
-        <h2>Make a Reservation</h2>
+        <h2 class="booking-text">Make a Reservation</h2>
 
-        <form>
+        <form action="index.html">
             <div class="form-grid">
 
                 <div>
                     <label>Name</label>
-                    <input type="text" placeholder="Your name" required>
+                    <input id="name" type="text" placeholder="Your name" required>
                 </div>
 
                 <div>
                     <label>Phone</label>
-                    <input type="tel" placeholder="Phone number" required>
+                    <input id="phone" type="tel" placeholder="Phone number" required>
                 </div>
 
                 <div>
                     <label>Email</label>
-                    <input type="email" placeholder="Email address">
+                    <input id="email" type="email" placeholder="Email address">
                 </div>
 
                 <div>
                     <label>Number of Guests</label>
-                    <select>
+                    <select id="guests">
                         <option>1 Person</option>
                         <option>2 People</option>
                         <option>3-4 People</option>
@@ -245,21 +233,21 @@
 
                 <div>
                     <label>Date</label>
-                    <input type="date" required>
+                    <input id="date" type="date" required>
                 </div>
 
                 <div>
                     <label>Time</label>
-                    <input type="time" required>
+                    <input id="time" type="time" required>
                 </div>
 
                 <div class="full-width">
                     <label>Special Requests</label>
-                    <textarea placeholder="Birthday, allergies, seating preference..."></textarea>
+                    <textarea id="request" placeholder="Birthday, allergies, seating preference..."></textarea>
                 </div>
 
                 <div class="full-width">
-                    <button class="submitbtn" type="submit">Reserve Table</button>
+                    <button class="submitbtn" type="button">Reserve Table</button>
                 </div>
 
             </div>
@@ -267,5 +255,6 @@
 
 
 </body>
+<script src="script.js"></script>
 
 </html>

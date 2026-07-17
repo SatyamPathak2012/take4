@@ -1,170 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-        <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
 
 </head>
 <style>
-    *{
+    * {
         margin: 0;
         padding: 0;
     }
-          .top {
-            display: flex;
-            padding: 1rem;
-            /* border: 1px solid black; */
-            /* background-color: #59cbee; */
-            background-color: rgba(9, 9, 9, 0.951);
-            align-items: center;
-            box-shadow: rgba(0, 0, 0, 0.286) 0px 3px 8px;
-            height: 3rem;
-            position: fixed;
-            width: 100%;
-            z-index: 5;
-            /* margin-top: 6.5rem; */
-        }
 
-        .name {
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: 23px;
-            font-weight: bolder;
-            color: white;
-            margin-left: 3rem;
-        }
+    body {
+        overflow: hidden;
+        background-color: #111;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
 
-        .logo {
-            padding: 0.6rem;
-            /* border: 1px solid black; */
-            border-radius: 50%;
-            color: white;
-            /* background-color: rgb(245, 199, 84); */
-            background-color: #e53740;
-            font-size: larger;
-            margin-left: 1rem
-        }
+    .top {
+        display: flex;
+        padding: 1rem;
+        /* border: 1px solid black; */
+        /* background-color: #59cbee; */
+        background-color: rgba(9, 9, 9, 0.951);
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.286) 0px 3px 8px;
+        height: 3rem;
+        position: fixed;
+        width: 100%;
+        margin-top: -8rem;
+        z-index: 5;
+    }
 
-        .menuicon {
-            font-size: large;
-            color: white;
-            padding: 0.75rem;
-            border-radius: 50%;
-            cursor: pointer;
-            display: none;
-        }
+    .name {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        font-size: 29px;
+        font-weight: bolder;
+        color: #ff9933;
+        margin-left: 3rem;
+    }
 
-        .menuicon:hover {
-            background-color: #59b2ee;
-        }
+    .logo {
+        padding: 0.6rem;
+        /* border: 1px solid black; */
+        border-radius: 50%;
+        color: white;
+        /* background-color: rgb(245, 199, 84); */
+        background-color: #ff9933;
+        font-size: larger;
+        margin-left: 1rem;
+    }
 
-        .aboutpage, .menupage {
-            color: white;
-            text-decoration: none;
-            font-size: larger;
-            margin-left: 5rem;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            transform: translateX(0);
-            transition: all 0.3s ease-in-out;
-            /* border-radius: 10px; */
-            /* border: 2px solid #59cbee; */
-            /* border: 1px solid rgba(26,26,26,0.95); */
-        }
+    .menuicon {
+        font-size: large;
+        color: white;
+        padding: 0.75rem;
+        border-radius: 50%;
+        cursor: pointer;
+        display: none;
+    }
 
-        .homepage {
-            color: white;
-            text-decoration: none;
-            font-size: larger;
-            margin-left: 6rem;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            transform: translateX(0);
-            transition: all 0.3s ease-in-out;
-            /* border-radius: 10px; */
-            /* border: 2px solid #59cbee; */
-            /* border: 2px solid rgba(26,26,26,0.95); */
-        }
+    .menuicon:hover {
+        background-color: #59b2ee;
+    }
 
-        .menupage:hover{
-            font-size: 25px;
-            transform: translateX(5px);
-            border-top: 2px solid white;
-            border-bottom: 2px solid white;
-            padding: 0.5vw;
-        }
+    .aboutpage {
+        color: white;
+        text-decoration: none;
+        font-size: larger;
+        margin-left: 3.5rem;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        transform: translateX(0);
+        transition: all 0.3s ease-in-out;
+        border-top: 2px solid rgba(9, 9, 9, 0.951);
+        border-bottom: 2px solid rgba(9, 9, 9, 0.951);
+        /* border-radius: 10px; */
+        /* border: 2px solid #59cbee; */
+        /* border: 1px solid rgba(26,26,26,0.95); */
+    }
 
+    .homepage {
+        color: white;
+        text-decoration: none;
+        font-size: larger;
+        margin-left: 5rem;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        transform: translateX(0);
+        transition: all 0.3s ease-in-out;
+        padding-bottom: 1vh;
+        border-bottom: 2px solid #ff9933;
+        /* border-radius: 10px; */
+        /* border: 2px solid #59cbee; */
+        /* border: 2px solid rgba(26,26,26,0.95); */
+    }
 
-        .homepage:hover {
-            /* text-decoration: underline; */
-            font-size: 25px;
-            transform: translateX(5px);
-            border-top: 2px solid white;
-            border-bottom: 2px solid white;
-            padding: 0.5vw;
-        }
+    .aboutpage:hover {
+        /* text-decoration: underline; */
+        font-size: 22px;
+        transform: translateX(5px);
+        border-top: 2px solid #ff9933;
+        border-bottom: 2px solid #ff9933;
+        padding: 0.5vw;
+    }
 
-        .aboutpage:hover {
-            /* text-decoration: underline; */
-            font-size: 25px;
-            transform: translateX(5px);
-            border-top: 2px solid white;
-            border-bottom: 2px solid white;
-            padding: 0.5vw;
-        }
+    .reservebtn {
+        display: inline-block;
+        padding: 14px 40px;
+        background: linear-gradient(45deg, #ff6b00, #ffb347);
+        color: white;
+        text-decoration: none;
+        border-radius: 20px;
+        font-weight: 600;
+        transition: all 0.3s;
+        border: none;
+        cursor: pointer;
+        font-size: 19px;
+        /* margin-right: 4vw; */
+        right: 4vw;
+        bottom: 2vh;
+        position: absolute;
+    }
 
-        .aboutpage1{
-            border-bottom: 2px solid #a31e25;
-            padding-bottom: 1vh;
-            color: white;
-            text-decoration: none;
-            font-size: larger;
-            margin-left: 5rem;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            transform: translateX(0);
-            transition: all 0.3s ease-in-out;
-        }
+    .reservebtn:hover {
+        /* background-color: #a31e25; */
+        transform: translateY(-3px);
+    }
 
+    .container {
+        margin-top: 8rem;
+    }
 
-        .reservebtn {
-            display: inline-block;
-            padding: 14px 40px;
-            background-color: #e53740;
-            color: white;
-            text-decoration: none;
-            border-radius: 20px;
-            font-weight: 600;
-            transition: all 0.3s;
-            border: none;
-            cursor: pointer;
-            font-size: 19px;
-            /* margin-right: 4vw; */
-            right: 3vw;
-            position: absolute;
-        }
+    .container {
+        text-align: center;
+    }
 
-        .reservebtn:hover {
-            background-color: #a31e25;
-            transform: translateY(-3px);
-        }
-        .a{
-            color: white;
-            text-decoration: none;
-            margin-bottom: 6.5vh;
-        }
+    .container h1 {
+        color: #ff9933;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 45px;
+    }
+
+    .main-items {
+        margin-top: 3rem;
+        padding: 1.5rem;
+        border-radius: 15px;
+        background-color: #1d1d1d;
+        width: 40vw;
+        margin-left: 28vw;
+        cursor: pointer;
+        backdrop-filter: blur(18px);
+        transition: 0.4s;
+        box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4);
+        /* text-align: start; */
+    }
+
+    .main-items:hover {
+        transform: translateY(-15px);
+    }
+
+    .item {
+        color: #ff9933;
+        font-size: 25px;
+        /* text-decoration: underline; */
+    }
+
+    span {
+        color: white;
+        /* text-decoration: none; */
+    }
+    .script-p{
+        text-align: center;
+        color: lightgrey;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 30px;
+        margin-top: 15vh;
+        margin-bottom: 5vh;
+    }
+    .script-a{
+        background: linear-gradient(45deg, #ff6b00, #ffb347);
+        padding: 1rem 1.5rem;
+        text-decoration: none;
+        color: white;
+        font-size: x-large;
+        border-radius: 10px;
+        backdrop-filter: blur(18px);
+        transition: 0.4s;
+    }
+    .script-a:hover{
+        transform: translateY(-3px);
+    }
 </style>
+
 <body>
     <div class="top">
         <i class="ri-menu-line menuicon"></i>
         <p class="name">The Momo House</p>
         <i class="ri-restaurant-line logo"></i>
 
-        <a href="index.html" class="homepage">Home</a>
+        <a href="index.html" class="aboutpage">Home</a>
         <a href="aboutus.html" class="aboutpage">About us</a>
-        <a href="menu.html" class="menupage">Our menu</a>
+        <a href="menu.html" class="aboutpage">Our menu</a>
         <a href="gallery.html" class="aboutpage">Gallery</a>
-        <a href="mybookings.html" class="aboutpage1">My Bookings</a>
+        <a href="mybookings.html" class="homepage">My Bookings</a>
 
         <a class="a" href="booking.html"><button class="reservebtn">Book a Table</button></a>
     </div>
+    <div class="container">
+
+        <h1>Your Booking</h1>
+
+        <div class="main-items">
+            <p class="item">Name : <span id="name"></span></p>
+            <p class="item">Phone : <span id="phone"></span></p>
+            <p class="item">Email : <span id="email"></span></p>
+            <p class="item">Guests : <span id="guests"></span></p>
+            <p class="item">Date : <span id="date"></span></p>
+            <p class="item">Time : <span id="time"></span></p>
+            <p class="item">Special Request : <span id="request"></span></p>
+        </div>
+
+    </div>
+
+
+
 </body>
+<script>
+
+    let booking = JSON.parse(localStorage.getItem("booking"));
+    let container = document.querySelector(".container");
+
+    if (booking == null) {
+
+        container.innerHTML = `
+        <h1>No Bookings Yet</h1>
+
+        <p class="script-p">
+            You haven't reserved a table yet.
+        </p>
+
+        <div class="script-div" style="text-align:center;">
+            <a class="script-a" href="booking.html" class="back">
+                Book a Table
+            </a>
+        </div>
+    `;
+
+    }
+    else {
+
+        document.querySelector("#name").textContent = booking.name;
+        document.querySelector("#phone").textContent = booking.phone;
+        document.querySelector("#email").textContent = booking.email;
+        document.querySelector("#guests").textContent = booking.guests;
+        document.querySelector("#date").textContent = booking.date;
+        document.querySelector("#time").textContent = booking.time;
+        document.querySelector("#request").textContent = booking.request;
+
+    }
+
+    localStorage.clear();
+
+</script>
+
 </html>
